@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Github Jobs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Nabvar -->
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+
+</head>
+
+<body>
+	<!--NavBar-->
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+					<a class="navbar-brand" href="#">GitSteps</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-collapse-4">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Home</a></li>
+						<li><a href="#About">About</a></li>
+						<li><a href="#Companies">Companies</a></li>
+						<li><a href="https://economictimes.indiatimes.com/news/international">News</a></li>
+						<li><a href="#Contact">Contact</a></li>
+						<li>
+							<a class="btn btn-default btn-outline btn-circle" data-toggle="collapse" href="#nav-collapse4" aria-expanded="false" aria-controls="nav-collapse4">Profile<i class=""></i> </a>
+						</li>
+					</ul>
+					<ul class="collapse nav navbar-nav nav-collapse" role="search" id="nav-collapse4">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="ig2.png" width="20" /> Welcome <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">My profile</a></li>
+								<li><a href="#">Favorited</a></li>
+								<li><a href="#">Settings</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+		<!-- /.navbar -->
+    <div id="my">
+		<div class="container text-center">
+			<!--<div class="jumbotron text-center">-->
+			<h1><b>Find Jobs in Github</b></h1>
+			<div class="input-box">
+				<input class="text-center" type="text" placeholder="Job Location" id="location" required>
+				<input class="text-center" type="text" placeholder="Job Description" id="description" required><br>
+			</div>
+
+			<div>
+				<button id="btn_email" type="button" class="btn btn-primary" onclick="findjobs();">Find Jobs</button>
+			</div>
+		</div>
+
+		<div id="message">
+
+		</div>
+		<div class="job text-center" id="job">
+			<h3><b>Find the jobs of your choice</b></h3>
+		</div>
+       
+		<!--<div class="result" id="result">
+			<h3 class="text-center"><b>Find the jobs of your choice</b></h3>
+		</div>-->
+		</div>
+	<div class="result" id="result">
+		</div>
+
+
+	<div id="About">
+		<h3 class="hd"> About us</h3>
+		<h4>Welcome To Our World!</h4>
+		<p> We are the world Github Job finders.Established by Robin Galda in 2005 ,we focus to get our clients the best job with ,in their desired location,with the desired field.In this era of satisfaction ,and hard work we make sure we get the best companies for our clients so that they can put in their hard work to get the best out of themselves plus help their company to grow and achieve greater heights.</p>
+	</div>
+	<div id="Companies">
+		<h3 class="hd">Our companies</h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<img src="logos.png" alt="company" height="200%" width="100%">
+				</div>
+				<div class="col-lg-4">
+					<img src="g2.png" alt="company" height="200%" width="100%">
+				</div>
+				<div class="col-lg-4">
+					<img src="g4.png" alt="company" height="200%" width="100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="g5.png" alt="company" height="200%" width="100%">
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+	<div id="Contact">
+		<h3 class="hd1"> Contact Us</h3>
+		<div class="row">
+			<div class="col-lg-6">
+				<i class="fas fa-phone"> 869-876-0092</i>
+			</div>
+			<div class="col-lg-6">
+				<i class="fas fa-envelope"> gitsteps@gmail.com</i>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
